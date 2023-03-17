@@ -24,6 +24,6 @@ There were dozens of signals that needed to be binded to dozens of modules. This
 
 ## Synchronization ##
 
-each stage of the calculation, the order of the processes being run needs to be properly controlled. Each row of CSA blocks needs to complete before the next row starts calculating. Also, each CPA needs to run before the following block.
+At each stage of the calculation, the order of the processes being run needs to be properly controlled. Each row of CSA blocks needs to complete before the next row starts calculating. Also, each CPA needs to run before the following block.
 
 My solution consisted of 8 separate clock signals, each delayed 1ns from the previous one. Each row of CSAs was assigned its own clock which they were positive edge sensitive to. Each CPA was also assigned its own clock, but they were negative edge sensitive.
