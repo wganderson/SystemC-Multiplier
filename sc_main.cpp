@@ -1,4 +1,3 @@
-// COE838 - Lab2 SystemC Main
 // Multiplier
 //////////////////////////////////
 //Testbench driver 
