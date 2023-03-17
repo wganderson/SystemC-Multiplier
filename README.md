@@ -1,4 +1,9 @@
 # SystemC-Multiplier
+
+## Multiplier ## 
+The multiplier outlined in this systemC repo will implement an 8x8 array multiplier similar is design the one depicted below.
+![image](https://user-images.githubusercontent.com/114177995/226064947-c661b0e6-1a30-4c35-bc03-7f75eb14ee86.png)
+
 ## CPA ##
 A CPA is simply a full adder, each input and output was assigned to a sc_int and sc_out port accordingly. As for the functionality, if one analyzes the many block diagrams that can be found on the internet, one would find that each output; S and C can be boiled down to a logical expression. This is convenient because C++ allows us to write expressions representing this digital logic. The sum and carry-out logic expression can be written in C++ as follows:
 ![image](https://user-images.githubusercontent.com/114177995/226051008-ef1f36b1-3f7c-4892-9a91-9db2b993581e.png)
